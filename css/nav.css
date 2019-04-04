@@ -1,0 +1,93 @@
+/*
+This project is licensed under the MIT License - see the LICENSE.md file for details
+https://github.com/skino0/fully-scroll-animated/blob/master/license.md
+*/
+#nav {
+    position:fixed;
+    right:2.2%;
+    transform:translateX(-1%);
+    height:40%!important;
+    width:300px;
+    z-index:10!important;
+    animation:navjoin 1s forwards;
+    -webkit-animation:navjoin 1s forwards;
+    -moz-animation:navjoin 1s forwards;
+    -ms-animation:navjoin 1s forwards;
+    -o-animation:navjoin 1s forwards;
+    user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+
+}
+
+@keyframes navjoin {
+    0%{opacity:0;-webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);}
+    100%{opacity:1;-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
+}
+@-webkit-keyframes navjoin {
+    0%{opacity:0;-webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);}
+    100%{opacity:1;-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
+}
+@-moz-keyframes navjoin {
+    0%{opacity:0;-webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);}
+    100%{opacity:1;-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
+}
+@-ms-keyframes navjoin {
+    0%{opacity:0;-webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);}
+    100%{opacity:1;-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
+}
+@-o-keyframes navjoin {
+    0%{opacity:0;-webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);}
+    100%{opacity:1;-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
+}
+
+/*nav item styles*/
+.nav_item {
+    position:absolute;
+    text-transform:uppercase;
+    font-family: 'Raleway', sans-serif;
+    /*
+    font-family: 'Montserrat', sans-serif;
+    */
+    user-select:none!important;-webkit-user-select:none!important;-moz-user-select:none!important;-o-user-select:none!important;-ms-user-select:none!important;
+    font-size:22px;
+    letter-spacing:3.8px;
+    transition-duration:.4s;
+    color:var(--white-txt);
+    right:5%;
+    line-height:0px;
+    margin:0;
+    padding:0;
+    transition-duration:.3s;
+    font-weight:900;
+
+}
+/*active nav item*/
+.nav_item.active {
+    transition-duration:.3s;
+    color:var(--lightgreen);
+    margin-right:10px!important;
+}
+
+.nav_item:hover {
+    cursor:pointer;
+    transition-duration:.3s;
+    letter-spacing:2.8px;
+    opacity:.9;
+
+}
+/*Positions of nav items*/
+.nav_item:nth-child(1) {
+    top:20%;
+    transform:translateY(-10%);
+}
+.nav_item:nth-child(2) {
+    top:40%;
+    transform:translateY(-20%);
+}
+.nav_item:nth-child(3) {
+    top:60%;
+    transform:translateY(-30%);
+}
+.nav_item:nth-child(4) {
+    top:80%;
+    transform:translateY(-40%);
+}

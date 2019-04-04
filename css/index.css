@@ -1,0 +1,60 @@
+/*
+This project is licensed under the MIT License - see the LICENSE.md file for details
+https://github.com/skino0/fully-scroll-animated/blob/master/license.md
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+:root {
+    --main-blackbg:rgb(19, 18, 18);
+    --main-lightblackbg:rgb(32, 32, 32);
+    --white-txt:rgb(236, 234, 234);
+    --lightgreen:#55efc4;
+
+
+}
+
+body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    /*hidden in end*/
+    overflow-y:auto;
+}
+/*containers*/
+
+.container:nth-child(1) {
+    position:absolute;
+    top:0%;
+    width:100vw;
+    height:100vh;
+    background:var(--main-blackbg);
+}
+.container:nth-child(2) {
+    position:absolute;
+    top:100%;
+    width:100vw;
+    height:100vh;
+    background:var(--main-lightblackbg);
+}
+.container:nth-child(3) {
+    position:absolute;
+    top:200%;
+    width:100vw;
+    height:100vh;
+    background:var(--main-blackbg);
+}
+.container:nth-child(4) {
+    position:absolute;
+    top:300%;
+    width:100vw;
+    height:100vh;
+    background:var(--main-lightblackbg);
+}
+
+
+
+
+
+
+

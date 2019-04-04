@@ -1,0 +1,40 @@
+/*
+This project is licensed under the MIT License - see the LICENSE.md file for details
+https://github.com/skino0/fully-scroll-animated/blob/master/license.md
+*/
+#top {
+    position:fixed;
+    bottom:2%;
+    right:2%;
+    background:#ccc;
+    padding:10px 30px 10px 30px;
+    opacity:.5;
+    transition-duration:.3s;
+    user-select:none;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;
+    border-radius:4px;
+    z-index:10;
+    opacity:0;
+}
+
+#top.activated {
+    transition-duration:.8s;
+    opacity:.5;
+}
+
+#top:hover {
+    transition-duration:.3s;
+    opacity:1;
+    cursor:pointer;
+}
+
+#top:hover > .fa-arrow-up  {
+    transition-duration:.3s;
+    margin-bottom:5px;
+}
+
+.fa-arrow-up {
+    font-size:25px;
+    color:rgb(15, 15, 15);
+    transition-duration:.3s;
+    margin-top:0px;
+}
